@@ -49,6 +49,7 @@ body{
     background-size: contain;
     background-position: 0 top;
     min-height: 100vh;
+    color: var(--clr-white);
 }
 
 header{
@@ -56,61 +57,52 @@ header{
 }
 
 header img{
-    width: calc(129.5rem / 16);
+  width: calc(129.5rem /16);
 }
 
-/* end of header  design */
-
-/* start design of main header */
-
-main{
-    display: flex;
+main {
+    display : flex;
     flex-direction: column;
     width: 80.5%;
     margin-inline: auto;
-    margin-top: 1.75rem;
+    margin-top:1.75rem;
 }
-
-main section{
-    text-align: center;
-    margin-top: 3.7rem;
-    color: var(--clr-white);
-    font-family: var(--ff-poppins);
-}
+/* 
+main section h1{
+    font-size: 2.1rem;
+} */
 
 main section p{
     font-family: var(--ff-sans);
-    margin-top: 0.85rem;
+    margin-top: 0.8rem;
     margin-bottom: 2rem;
 }
 
 main section a{
-    background-color: var(--clr-white);
-    color: var(--clr-violet);
-    padding: 0.8rem 4.7rem 0.65rem;
-    font-size: 0.75rem;
-    text-decoration: none;
-    border-radius: 2rem;
-    box-shadow: 0rem 0.1rem 0.5rem rgba(0,0,0,0.3);
-    cursor: pointer;
-    transition: all 0.2s ease-out;
+background-color: var(--clr-white);
+color: var(--clr-violet);
+padding: 0.8rem 4.7rem 0.65rem;
+font-size: 1rem;
+text-decoration: none;
+ border-radius: 2rem;
+box-shadow: 0rem 0.1rem 0.5rem rgba(0, 0, 0, 0.3);
+cursor: pointer;
+transition: all 0.2s ease-out;
 }
 
 main section a:hover{
     background-color: var(--clr-magenta);
     color: #fff;
 }
-/* end main section */
 
+footer {
+    margin-top: 4.5rem;
 
-/* footers */
-
-footer{
-    margin-top:4.5rem;
 }
-footer .icons{
+
+footer .icons {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     width: 100%;
     margin-inline: auto;
     align-items: center;
@@ -120,94 +112,91 @@ footer .icons i{
     color: var(--clr-white);
     font-size: 0.75rem;
     padding: 0.25rem;
-    transition: all 0.25s ease-out;
+    transition : all 0.2s ease-out;
 }
 
-footer .icons a:last-of-type i{
-    font-size: 1rem;
+footer .icons a i{
+ font-size: 1rem;
 }
 
 footer .icons a:hover i{
     color: var(--clr-magenta);
-
 }
+
 
 footer .icons a{
     display: flex;
-    justify-content: center;
-    align-items: center;
-
+    justify-content:center;
+    align-items:center;
     width: 1.75rem;
     height: 1.75rem;
-    border : 0.07rem solid var(--clr-white);
+    border: 0.078rem solid bar(--clr-white);
     border-radius: 50%;
     text-decoration: none;
-    transition: all 0.25s ease-out;
+    transition: all 0.2s ease-out;
 }
-
 footer .icons a:hover{
-      border: 0.078125rem solid var(--clr-magenta);
+    border : 0.0781rem solid var(--clr-magenta);
 }
-
 footer .icons a:nth-of-type(2){
     margin-left: 1rem;
     margin-right: 1rem;
 }
 
 
-@media(min-width: 62.5em) {
+@media (min-width: 62rem){
     body{
         background-image: url(../images/bg-desktop.svg);
+        background-size: cover;
     }
-
     header{
-        padding: 3.3rem 4.325rem;
+        padding: 3.3rem 4.32rem;
     }
-
     header img{
-        width: calc(216rem / 16);
+        width: calc(216rem/16);
+
     }
 
-    main{
+    main {
         margin-top: 2.1rem;
         flex-direction: row;
-        width: 89.75%;
-
+        width: 80.75%;
+    }
+    main img {
+   flex-basis: 54.78%;
+   width: 31.6rem;
     }
 
-    main img{
-        flex-basis: 54.78%;
-        width: 31.625rem;
-    }
-    main section{
-        width: 33 rem;
-        height: 28rem;
-        text-align: left;
-        margin-left: 3.3rem;
-        margin-top: 3 rem;
+    main section { 
+   width: 33.16rem;
+   height:28rem;
+   text-align: left;
+   margin-left: 3.3rem;
+   margin-top: 2.6rem;
     }
 
-    main section h1{
+    main section h1 {
         font-size: 2.5rem;
-        letter-spacing: -0.015rem;
+        letter-spacing:-0.015rem;
     }
+
     main section p{
-        margin-top: 1.5rem;
-        font-size: 1.1rem;
+        margin-top: 1.23rem;
+        font-size: 1.122rem;
         margin-right: 1rem;
         opacity: 0.8;
         margin-bottom: 2.5rem;
     }
+
     main section a{
         font-size: 1.15rem;
         padding: 0.9rem 4rem 1rem;
-
     }
-
-    footer {
-        margin-top: 1.35rem;
+    
+    footer{
+        margin-top: 1.4rem;
     }
-    footer .icons{
+    footer .icons {
         justify-content:flex-end;
         padding-right: 5rem;
     }
@@ -215,11 +204,10 @@ footer .icons a:nth-of-type(2){
         font-size: 1rem;
         padding: 2rem;
     }
+    footer .icons a:last-of-type i{
+        font-size: 1.25rem;
+    }
     footer .icons a{
         width: 2.5rem;
         height: 2.5rem;
     }
-}
-
-
-
